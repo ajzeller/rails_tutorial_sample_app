@@ -1,0 +1,37 @@
+
+oatmeal:
+  content: "Oatmeal is a smart choice for just about any snack or meal"
+  created_at: <%= 10.minutes.ago %>
+  user: user1
+
+bitcoin:
+  content: "To the moon..."
+  created_at: <%= 30.minutes.ago %>
+  user: user1
+
+most_recent:
+   content: "Testing out the sample app!"
+   created_at: <%= Time.zone.now %>
+   user: user1
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: user1
+<% end %>
+
+bike:
+  content: "I love bikes"
+  created_at: <%= 3.days.ago %>
+  user: user1
+
+car:
+  content: "Cars are fast too"
+  created_at: <%= 4.days.ago %>
+  user: user2
+
+laptop:
+  content: "Macbook pros are awesome."
+  created_at: <%= 1.week.ago %>
+  user: user2
