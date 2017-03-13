@@ -1,0 +1,19 @@
+one:
+  follower: user2
+  followed: user3
+
+two:
+  follower: user3
+  followed: user2
+
+three:
+  follower: user2
+  followed: user1
+
+four:
+  follower: user3
+  followed: user1
+
+five:
+  follower: user1
+  followed: user3
